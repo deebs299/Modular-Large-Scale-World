@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Large-Scale World</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #87CEEB; font-family: 'Inter', sans-serif; }
+        canvas { display: block; }
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            display:block;
+            color: #fff;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="info">Find the glowing green cylinder! | Orbit: Drag Mouse | Player Mode: Enter | Walk: WASD | Jump: Space | Exit: Tab</div>
+
+    <!-- Import map for Three.js and its addons -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/",
+            "simplex-noise": "https://cdn.skypack.dev/simplex-noise"
+        }
+    }
+    </script>
+
+    <!-- CORRECTED SCRIPT PATH: Loads main.js from the root directory -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
